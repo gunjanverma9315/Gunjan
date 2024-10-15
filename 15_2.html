@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <button id="btn1">Button1</button>
+        <button id="btn2">Button2</button>
+
+    </div>
+    <script>
+        document.getElementById("parent").addEventListener("click",function(event){
+            if(event.target.tagName=="BUTTON"){
+                alert(event.target.innerHTML+"was clicked!");
+            }
+            if(event.target.tagname.innerHTML=="p")
+        })
+    </script>
+</body>
+</html>
